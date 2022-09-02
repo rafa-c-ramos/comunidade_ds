@@ -218,8 +218,8 @@ def set_commercial_analysis(data):
     data['date'] = pd.to_datetime(data['date']).dt.strftime('%Y-%m-%d')
 
     # setup filters
-    min_date = datetime.strptime(data['date'].min(), '%Y-%m-%d')
-    max_date = datetime.strptime(data['date'].max(), '%Y-%m-%d')
+    min_date = datetime.strptime(str(data['date'].min()), '%Y-%m-%d')
+    max_date = datetime.strptime(str(data['date'].max()), '%Y-%m-%d')
     filter_date = st.sidebar.slider('Date', min_date, max_date, min_date)
 
     # filter the data
