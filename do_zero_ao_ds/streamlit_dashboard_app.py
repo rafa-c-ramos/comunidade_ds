@@ -311,7 +311,7 @@ def set_physical_analysis(data):
 # initialize script
 if __name__ == "__main__":
     # paths
-    path = 'C:/Users/rafac/Documents/comunidade_ds/do_zero_ao_ds/kc_house_data.csv'
+    path = 'https://github.com/rafa-c-ramos/comunidade_ds/blob/master/do_zero_ao_ds/kc_house_data.csv'
     url = 'https://opendata.arcgis.com/datasets/83fc2e72903343aabff6de8cb445b81c_2.geojson'
     
     # get the data
